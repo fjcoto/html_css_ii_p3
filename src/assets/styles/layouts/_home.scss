@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -7,14 +9,18 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  color: black;
+  background-color: white;
 }
 
+.flex-1{
+  flex: 1;
+}
+
+/*
 .uoc-container {
   max-width: 800px;
   margin: auto;
@@ -55,3 +61,4 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+*/

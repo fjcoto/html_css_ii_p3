@@ -48,12 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const options = document.querySelectorAll('.header__nav-item > a');
 
   options.forEach(function (option) {
-    if (option.getAttribute('href') === path) {
-      option.classList.add('active');
-    }
-
-    if (path === '/detail.html') {
-      options[1].classList.add('active');
+   
+    if ("/"+option.getAttribute('href') === path) {
+      option.classList.add('font-bold');
+      option.classList.add('text-blue');
     }
 
   });

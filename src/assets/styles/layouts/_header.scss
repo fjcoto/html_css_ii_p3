@@ -73,17 +73,13 @@
         height: auto;
 
         @media screen and (min-width: $widthMinTablet) {
-            width: 150px;
+            width: 100px;
         }
 
         .header__logo {
             display: block;
             width: 100%;
             height: auto;
-
-            @media screen and (min-width: $widthMinTablet) {
-                content: url('../../assets/images/logo-header.png');
-            }
         }
     }
 

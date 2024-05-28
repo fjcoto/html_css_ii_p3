@@ -16,6 +16,10 @@ body {
   background-color: white;
 }
 
+.card-hover {
+  @apply hover:scale-105 hover:shadow-pink;
+}
+
 
 /*.flex {
   display: flex;

@@ -9,47 +9,51 @@
 /**
  * Write any other JavaScript below
  */
-
-+( function() {
+/*
++(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Index selectors
-  const overlay = document.querySelector('.overlay');
+  const navButton = document.getElementById('nav-button');
+  const navMenu = document.getElementById('nav-menu');
+  const openIcon = document.getElementById('open-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const header = document.querySelector('header');
 
-  // Header selectors
-  const menuButton = document.querySelector('.header__menu-button');
-  const navContainer = document.querySelector('.header__nav');
-  const iconBar = document.querySelector('.fa-bars');
-  const iconTimes = document.querySelector('.fa-times');
-
-  function toggleMenu() {
-    if (navContainer.style.transform === 'translateX(-100%)' || !navContainer.style.transform) {
-      navContainer.style.transform = 'translateX(0%)';
-      iconBar.style.display = 'none';
-      iconTimes.style.display = 'block';
-      overlay.style.display = 'block';
+  function navPosition() {
+    if (window.innerWidth >= 768) {
+      if (!header.contains(navMenu)) {
+        header.appendChild(navMenu);
+        navMenu.classList.remove('hidden');
+      }
     } else {
-      navContainer.style.transform = 'translateX(-100%)';
-      iconBar.style.display = 'block';
-      iconTimes.style.display = 'none';
-      overlay.style.display = 'none';
+      if (header.contains(navMenu)) {
+        header.parentElement.insertBefore(navMenu, header.nextSibling);
+        navMenu.classList.add('hidden');
+      }
     }
-
   }
+  navPosition();
 
-  menuButton.addEventListener('click', toggleMenu);
+  window.addEventListener('resize', navPosition);
+
+  navButton.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+    openIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
 
   // Active menu option
   const path = window.location.pathname;
-  const options = document.querySelectorAll('.header__nav-item > a');
+  const options = document.querySelectorAll('#nav-menu a');
 
   options.forEach(function (option) {
-   
-    if ("/"+option.getAttribute('href') === path) {
+
+    if ("/" + option.getAttribute('href') === path) {
       option.classList.add('font-bold');
       option.classList.add('text-blue');
     }

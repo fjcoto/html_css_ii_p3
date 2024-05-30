@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Contest 2024 Edition</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .active {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="flex justify-between items-center py-4 mx-16">
+        <h1 class="text-xl font-bold">Cooking Contest 2024 Edition</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">The Contest</a></li>
+                <li><a href="#" class="hover:underline">Recipes</a></li>
+                <li><a href="#" class="active p-2 rounded">Contestants</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-16">
+        <!-- Main Title and Subtitle -->
+        <section class="text-center my-8">
+            <h2 class="text-4xl font-bold">Contestants</h2>
+            <p class="text-gray-600">This section describes the recipes of the best contestants</p>
+        </section>
+
+        <!-- Banner Image -->
+        <section class="my-8">
+            <img src="assets/images/banner-ia.png" alt="Banner" class="w-full rounded-lg">
+        </section>
+
+        <!-- Subtitle and Description -->
+        <section class="my-8">
+            <h3 class="text-2xl font-bold">The Recipes</h3>
+            <p class="text-gray-600">These are the recipes of the best contestants</p>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="flex flex-wrap justify-between my-8 space-y-4 md:space-y-0">
+            <!-- Card 1 -->
+            <div class="w-full md:w-1/3 p-4 shadow-lg">
+                <h4 class="text-xl font-bold">Cajun seafood pasta</h4>
+                <div class="flex items-center mt-4">
+                    <img src="assets/images/participant-2.jpg" alt="John Cooper" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold">John Cooper</p>
+                        <p class="text-gray-600">This Cajun seafood pasta recipe is a hot one, nut delicious!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="w-full md:w-1/3 p-4 shadow-lg">
+                <h4 class="text-xl font-bold">Cedar planked salmon</h4>
+                <div class="flex items-center mt-4">
+                    <img src="assets/images/participant-3.jpg" alt="Marta Alonso" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold">Marta Alonso</p>
+                        <p class="text-gray-600">Salmon reaches its full potential when it's grilled on top of a cedar
+                            plank.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="w-full md:w-1/3 p-4 shadow-lg">
+                <h4 class="text-xl font-bold">Poulet au vinagre</h4>
+                <div class="flex items-center mt-4">
+                    <img src="assets/images/participant-4.jpg" alt="Mary Ann Stones"
+                        class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold">Mary Ann Stones</p>
+                        <p class="text-gray-600">Irresistible chicken, cooked with vinegar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mx-16 py-8 border-t">
+        <div class="flex justify-between">
+            <div>
+                <h1 class="text-xl font-bold">Cooking Contest 2024 Edition</h1>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 font-bold">
+                <span>Recipes</span><span>Contestants</span><span>Contest editions</span>
+                <span>Cajun seafood pasta</span><span>John Cooper</span><span>2024</span>
+                <span>Cedar planked salmon</span><span>Marta Alonso</span><span>2023</span>
+                <span>Poulet au vinagre</span><span>Mary Ann Stones</span><span>2022</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>

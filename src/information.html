@@ -31,7 +31,7 @@
 
           <div class="w-full md:w-9/12 flex flex-col md:flex-row mb-4">
             <div class="md:w-1/12"></div>
-            <div class="md:w-4/12 text-2xl md:text-2.5xl leading-snug mb-4 md:mb-0 mr-6">
+            <div class="md:w-4/12 text-2xl md:text-2.5xl leading-tight mb-4 md:mb-0 mr-6">
               <strong>¡Únete a Nuestro Gran Concurso de Cocina Anual!</strong>
               <p class="pt-2">
                 Participa en una emocionante competencia culinaria donde chefs aficionados y profesionales demuestran
@@ -39,7 +39,7 @@
               </p>
             </div>
 
-            <div class="md:w-6/12 text-xl leading-snug">
+            <div class="md:w-6/12 text-xl leading-tight">
               <strong>¿Por qué participar?</strong>
               <p class="mb-4">
                 Experimenta la adrenalina de competir en un ambiente profesional y festivo. Conecta con
@@ -61,46 +61,22 @@
 
           <div class="w-full md:w-9/12 flex flex-col items-center">
             <div class="w-full">
-              <ol class="list-none p-0 mx-10">
 
-                <include src="./views/list-item.html">
-                  {
-                  "num": "1",
-                  "title": "Registrarse",
-                  "desc": "Regístrate en nuestro sitio web y completa tu perfil con detalles culinarios. Asegúrate de incluir tu experiencia, especialidades y cualquier distinción relevante que pueda destacarte entre los competidores. Proporciona también una breve biografía para que los jueces y otros participantes puedan conocer más sobre tu trayectoria en el mundo culinario."
-                  }
-                </include>
+              <include src="./views/list.html"></include>
 
-                <include src="./views/list-item.html">
-                  {
-                  "num": "2",
-                  "title": "Mostrar tu plato",
-                  "desc": "Sube una receta original y una foto de tu plato a la sección del concurso. Asegúrate de que la fotografía sea de alta calidad, ya que esto puede influir en cómo los jueces perciben tu plato. Describe los ingredientes, el proceso de preparación y la inspiración detrás de tu creación, destacando cualquier elemento único o técnica innovadora que hayas empleado."
-                  }
-                </include>
-
-                <include src="./views/list-item.html">
-                  {
-                  "num": "3",
-                  "title": "Esperar el veredicto",
-                  "desc": "Espera a que el jurado evalúe tu entrada y sigue participando en las actividades del concurso mientras tanto. Participa en los talleres, demostraciones y sesiones de networking programadas durante el evento. Estas actividades no solo son oportunidades para aprender y mejorar tus habilidades, sino también para interactuar con otros chefs y profesionales de la industria, lo que podría abrir nuevas puertas en tu carrera culinaria."
-                  }
-                </include>
-                
-              </ol>
             </div>
           </div>
 
           <hr class="divider">
 
-          <div class="w-full md:w-9/12 text-3xl leading-tight mb-4">
+          <div class="w-full md:w-9/12 text-2xl leading-tight mb-4">
             <p>
               Sumérgete en el emocionante mundo de los concursos culinarios con nuestro evento anual,
               diseñado para destacar y premiar el talento y la creatividad en la cocina.
             </p>
           </div>
 
-          <div class="w-full md:w-9/12 text-xl leading-snug my-3">
+          <div class="w-full md:w-9/12 text-xl leading-tight my-3">
             <p>
               Al participar en nuestro concurso, no solo estarás compitiendo por el título y premios
               significativos, sino que también tendrás la oportunidad de conectar con otros
@@ -118,7 +94,7 @@
             <img src="assets/images/banner-2.png" alt="Alimentos y utensilios de cocina" class="w-full">
           </div>
 
-          <div class="w-full md:w-9/12 text-xl leading-snug my-3">
+          <div class="w-full md:w-9/12 text-xl leading-tight my-3">
             <p>
               Gracias por visitar nuestra página del Concurso de Cocina Anual. Esperamos que la
               información proporcionada te haya inspirado a explorar nuevas oportunidades y desafíos
@@ -132,7 +108,7 @@
           <hr class="divider">
 
           <div class="w-full md:w-9/12 text-xl">
-            <blockquote class="pl-4">
+            <blockquote class="leading-tight">
               "Participar en este concurso no solo me permitió mostrar mis habilidades culinarias,
               sino que también abrió las puertas a una comunidad apasionada y dedicada, ofreciéndome
               numerosas oportunidades de crecimiento profesional."

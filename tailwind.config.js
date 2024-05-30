@@ -4,14 +4,29 @@ module.exports = {
   theme: {
     colors: {
       'black': '#000000',
+      'white': '#ffffff',
       'blue': '#3a63df',
       'gray': '#f8f9fa',
       'gray-light': '#d3dce6',
-      'gray-dark':'#6c757d',
+      'gray-dark': '#6c757d',
       'pink': '#fabada',
-      'green': '',
+      'green': '',      
     },
     extend: {
+      fontFamily: {
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"'
+        ],
+      },
       fontSize: {
         '2.5xl': '1.75rem',
       },

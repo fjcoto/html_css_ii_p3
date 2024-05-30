@@ -1,15 +1,11 @@
 <div
     class="w-full min-h-[600px] my-4 md:w-1/2 lg:w-1/3 xl:w-1/6 text-center border border-gray-light rounded-lg overflow-hidden transform transition-transform duration-300 card-hover max-w-[350px] sm:max-w-[300px] md:max-w-[330px] lg:max-w-[300px] xl:max-w-[285px]">
-    <img src="{{ imgSrc }}" class="w-full"
-        alt="Foto de perfil de Fran Coto, el participante número 1">
+    <img src="{{ imgSrc }}" class="w-full" alt="{{ imgAlt }}">
     <div class="p-4">
         <ul>
-            <li>Fran Coto</li>
+            <li>{{ name }}</li>
             <div class="border-t border-gray-light mx-1 my-2"></div>
-            <li class="pt-2 px-5 text-sm italic">Ingeniero informático y estudiante de máster en la UOC, Fran Coto
-                está decidido
-                a conquistar el premio con su pasión y conocimiento en cocina, combinando tecnología y tradición en cada
-                plato.</li>
+            <li class="pt-2 px-5 text-sm italic">{{ desc }}</li>
         </ul>
     </div>
 </div>

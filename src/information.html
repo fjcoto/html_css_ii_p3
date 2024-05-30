@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>
 
-<body>
+<body class="body">
   <include src="./views/header.html"></include>
 
   <main class="flex-1">
@@ -57,64 +57,41 @@
             <div class="md:w-1/12"></div>
           </div>
 
-          <hr class="w-4/5 my-4 text-gray-light">
+          <hr class="divider">
 
           <div class="w-full md:w-9/12 flex flex-col items-center">
             <div class="w-full">
               <ol class="list-none p-0 mx-10">
-                <li class="mb-3 flex items-start">
-                  <div
-                    class="min-w-7 min-h-7 md:min-w-9 md:min-h-9 md:text-2xl flex items-center justify-center text-blue font-bold rounded-full border-2 border-pink mr-2">
-                    1</div>
-                  <div>
-                    <span class="font-bold">Registrarse</span>
-                    <p>
-                      Regístrate en nuestro sitio web y completa tu perfil con detalles culinarios.
-                      Asegúrate de incluir tu experiencia, especialidades y cualquier distinción
-                      relevante que pueda destacarte entre los competidores. Proporciona también una
-                      breve biografía para que los jueces y otros participantes puedan conocer más
-                      sobre tu trayectoria en el mundo culinario.
-                    </p>
-                  </div>
-                </li>
 
-                <li class="mb-3 flex items-start">
-                  <div
-                    class="min-w-7 min-h-7 md:min-w-9 md:min-h-9 md:text-2xl flex items-center justify-center text-blue font-bold rounded-full border-2 border-pink mr-2">
-                    2</div>
-                  <div>
-                    <span class="font-bold">Mostrar tu plato</span>
-                    <p>
-                      Sube una receta original y una foto de tu plato a la sección del concurso.
-                      Asegúrate de que la fotografía sea de alta calidad, ya que esto puede influir en
-                      cómo los jueces perciben tu plato. Describe los ingredientes, el proceso de
-                      preparación y la inspiración detrás de tu creación, destacando cualquier
-                      elemento único o técnica innovadora que hayas empleado.
-                    </p>
-                  </div>
-                </li>
+                <include src="./views/list-item.html">
+                  {
+                  "num": "1",
+                  "title": "Registrarse",
+                  "desc": "Regístrate en nuestro sitio web y completa tu perfil con detalles culinarios. Asegúrate de incluir tu experiencia, especialidades y cualquier distinción relevante que pueda destacarte entre los competidores. Proporciona también una breve biografía para que los jueces y otros participantes puedan conocer más sobre tu trayectoria en el mundo culinario."
+                  }
+                </include>
 
-                <li class="mb-3 flex items-start">
-                  <div
-                    class="min-w-7 min-h-7 md:min-w-9 md:min-h-9 md:text-2xl flex items-center justify-center text-blue font-bold rounded-full border-2 border-pink mr-2">
-                    3</div>
-                  <div>
-                    <span class="font-bold">Esperar el veredicto</span>
-                    <p>
-                      Espera a que el jurado evalúe tu entrada y sigue participando en las actividades
-                      del concurso mientras tanto. Participa en los talleres, demostraciones y
-                      sesiones de networking programadas durante el evento. Estas actividades no solo
-                      son oportunidades para aprender y mejorar tus habilidades, sino también para
-                      interactuar con otros chefs y profesionales de la industria, lo que podría abrir
-                      nuevas puertas en tu carrera culinaria.
-                    </p>
-                  </div>
-                </li>
+                <include src="./views/list-item.html">
+                  {
+                  "num": "2",
+                  "title": "Mostrar tu plato",
+                  "desc": "Sube una receta original y una foto de tu plato a la sección del concurso. Asegúrate de que la fotografía sea de alta calidad, ya que esto puede influir en cómo los jueces perciben tu plato. Describe los ingredientes, el proceso de preparación y la inspiración detrás de tu creación, destacando cualquier elemento único o técnica innovadora que hayas empleado."
+                  }
+                </include>
+
+                <include src="./views/list-item.html">
+                  {
+                  "num": "3",
+                  "title": "Esperar el veredicto",
+                  "desc": "Espera a que el jurado evalúe tu entrada y sigue participando en las actividades del concurso mientras tanto. Participa en los talleres, demostraciones y sesiones de networking programadas durante el evento. Estas actividades no solo son oportunidades para aprender y mejorar tus habilidades, sino también para interactuar con otros chefs y profesionales de la industria, lo que podría abrir nuevas puertas en tu carrera culinaria."
+                  }
+                </include>
+                
               </ol>
             </div>
           </div>
 
-          <hr class="w-4/5 my-4 text-gray-light">
+          <hr class="divider">
 
           <div class="w-full md:w-9/12 text-3xl leading-tight mb-4">
             <p>
@@ -152,7 +129,7 @@
             </p>
           </div>
 
-          <hr class="w-4/5 my-4 text-gray-light">
+          <hr class="divider">
 
           <div class="w-full md:w-9/12 text-xl">
             <blockquote class="pl-4">

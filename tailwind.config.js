@@ -10,7 +10,6 @@ module.exports = {
       'gray-light': '#d3dce6',
       'gray-dark': '#6c757d',
       'pink': '#fabada',
-      'green': '',      
     },
     extend: {
       fontFamily: {
@@ -41,8 +40,34 @@ module.exports = {
         '8xl': '90rem',
         '9xl': '100rem',
         '10xl': '110rem',
-      }
-    }
+      },
+      keyframes: {
+        'roll-in-top': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-250px) rotate(-200deg)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0) rotate(0)'
+          },
+        },
+        'wave': {
+          '0%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '25%': {
+            transform: 'translateY(-10px)',
+          },
+          '50%': {
+            transform: 'translateY(5px)',
+          },
+          '75%': {
+            transform: 'translateY(-5px)',
+          },
+        },
+      },
+    },
   },
   variants: {
     extend: {
